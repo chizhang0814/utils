@@ -35,7 +35,7 @@ def wavRead(fname, spkr_info, labfile, dst_folder):
         ed = int(float(temp[1])*framerate)
 
         #outFileName = fname.strip('.')[0]+'_'str(i+1)+'_'+txt+'.wav'
-        outFileName = dst_folder+'/'+spkr_info+'_txt_'+txt+'_'+str(i+1)+'.wav'
+        outFileName = dst_folder+'/'+spkr_info+'_'+txt+'_'+str(i+1)+'.wav'
         print fname.strip('.wav')
         print outFileName
         ofile = wave.open(outFileName, 'w')
